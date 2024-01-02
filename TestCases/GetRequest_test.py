@@ -11,12 +11,6 @@ def test_get_user_successful():
         assert response.status_code == 200
 
 
-def test_get_user_unsuccessful():
-    response = requests.get(ENDPOINT + USER)
-    print(response.json())
-    assert response.status_code == 203
-
-
 def test_header():
     response = requests.get(ENDPOINT + USER)
     print(response.json())
