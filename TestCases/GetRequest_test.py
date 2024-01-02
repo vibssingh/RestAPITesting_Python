@@ -1,15 +1,10 @@
-import logging
-
-import allure
 import requests
-from assertpy import assert_that
 
 ENDPOINT = 'https://reqres.in/api/'
 USER = 'users/2'
 
 
 def test_get_user_successful():
-    with allure.step('validation'):
         response = requests.get(ENDPOINT + USER)
         response_body = response.json()
         print(response_body)
