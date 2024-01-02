@@ -1,5 +1,4 @@
 import requests
-from assertpy import assert_that
 
 ENDPOINT = 'https://reqres.in/api/users'
 
