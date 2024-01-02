@@ -31,6 +31,7 @@ jobs:
         pip install requests
        
     - name: Test with pytest
-      run: cd TestCases
+      run: |
+        cd TestCases
         pytest  --verbose --capture=no
 
